@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+h2{
+  font-weight: 900;
+}
+
+body {
+  background-color: hsl(232, 19%, 15%);
+  font-family: "Inter", sans-serif;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  display: block;
+}
+
+.main-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5%;
+  padding-top: 20px;
+}
+
+.top-heading {
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+}
+
+.top-heading p{
+  color:  hsl(228, 34%, 66%);
+}
+
+
+
+.first-card {
+  padding: 20px 20px;
+  margin-left: 5%;
+  position: relative;
+  top: 20px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5%;
+  width: 20%;
+  padding: 10px;
+  margin: 0 10px;
+  position: relative;
+  background-color:hsl(228, 28%, 20%);
+}
+
+.card-top {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.card-top small {
+  margin-left: 10px;
+  color: hsl(228, 34%, 66%);
+}
+
+.card-followers {
+  text-align: center;
+  padding: 20px 0;
+  line-height: 3rem;
+}
+
+.card-followers p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.card-followers small {
+  color:  hsl(228, 34%, 66%);
+  letter-spacing: 3px;
+}
+
+.card-bottom {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card-bottom small {
+  padding-left: 5px;
+  color: hsl(163, 72%, 41%);
+}
+
+.card-yt .card-bottom small {
+  color: hsl(356, 69%, 56%);
+}
+
+.second-section {
+  margin-top: 50px;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.second-section h2 {
+  margin-left: 5%;
+  padding-bottom: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+.card-overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5%;
+  background-color: hsl(228, 28%, 20%);
+  padding: 0 10px;
+  margin: 10px;
+  width: 20%;
+}
+
+.card-overview-top, .card-overview-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-overview-top p {
+  color: hsl(228, 34%, 66%);
+  font-weight: 700;
+}
+
+.card-overview-bottom>p {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.increase, .decrease {
+  display: flex;
+  align-items: center;
+
+}
+
+.increase{
+  color: hsl(146, 68%, 55%);
+}
+
+.decrease {
+  color: hsl(356, 69%, 56%);
+}
+
+.increase small, .decrease small {
+  padding-left: 5px;
+}
+
+.card:hover, .card-overview:hover {
+  cursor: pointer;
+  background-color:  hsl(232, 19%, 15%);
+}
+
+@media screen and (max-width:768px) {
+  .main-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle {
+    border-top: 2px solid hsl(228, 34%, 66%);
+    margin: 20px 0;
+    width: 100%;
+    justify-content: start;
+  }
+
+  .toggle-text,
+  .toggle-switch {
+    margin: 10px 0;
+  }
+
+  .first-card {
+    display: flex;
+    flex-direction: column;
+    top: -20px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .second-section {
+    margin-top: 900px;
+  }
+
+  .second-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
